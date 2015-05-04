@@ -1,0 +1,17 @@
+<element name="${name}">
+    <style type="text/css">
+    :host {
+        /*css*/
+    }
+    </style>
+    <template>
+        <div><content></content></div>
+    </template>
+    <script type="text/javascript">
+    Rosetta.register('${name}', function(tag) {
+        tag.foo = function() {
+
+        };
+    });
+    </script>
+</element>
