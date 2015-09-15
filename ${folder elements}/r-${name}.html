@@ -8,10 +8,13 @@
         <div><content></content></div>
     </template>
     <script type="text/javascript">
-    Rosetta.register('r-${name}', function(tag) {
-        tag.foo = function() {
-
-        };
+    Rosetta.register({
+        is: 'r-${name}',
+        properties: {},
+        created: function() {},
+        attached: function() {},
+        attributeChanged: function() {},
+        detached: function() {}
     });
     </script>
 </element>
